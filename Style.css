@@ -434,6 +434,7 @@ textarea {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 .hover-content {
+  max-height: 100%;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -459,8 +460,10 @@ textarea {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: visibility 0s, opacity 0.3s ease-in-out;
   z-index: 10;
-  white-space: nowrap;
-  min-width: 150px;
+  white-space: normal;
+  max-width: 90vw;
+  max-height: 90vh;
+  word-wrap: break-word;
   text-align: center;
 }
 .easter-egg-container:hover .hover-content {
@@ -612,5 +615,9 @@ textarea {
     flex-direction: column;
     text-align: center;
     gap: 10px;
+  }
+  .hover-content {
+    font-size: 0.9rem;
+    padding: 8px 10px;
   }
 }
