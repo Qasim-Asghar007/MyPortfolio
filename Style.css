@@ -439,11 +439,11 @@ textarea {
   opacity: 0;
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 30%;
   transform: translateX(-50%);
   background-image: linear-gradient(
     to right,
-    #f7ef8a,
+    #e8c857,
     #f7ef8a,
     #d2ac47,
     #edc967,
@@ -469,6 +469,21 @@ textarea {
 .easter-egg-container:hover .hover-content {
   visibility: visible;
   opacity: 1;
+}
+
+#footer-content
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  width: 95vw;
+  height: 6vh;
+  display: flex;
+  background-color: rgb(23, 19, 55);
+  color: rgb(127, 127, 214);
 }
 
 @media (max-width: 1199.98px) {
@@ -615,9 +630,5 @@ textarea {
     flex-direction: column;
     text-align: center;
     gap: 10px;
-  }
-  .hover-content {
-    font-size: 0.9rem;
-    padding: 8px 10px;
   }
 }
